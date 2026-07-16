@@ -4,13 +4,23 @@ using namespace std;
 
 int main (){
     short n,k, input, count {};
+
+    cin >> n >> k;
+
+    int arr[n];
     
-    for (short i=0; i<n; i++){
-        cin >> input;
-        if (input>k){
+    for (int i=0; i<n; i++){
+
+        cin >> arr[i];
+    }
+    
+        for (int i=0; i<n; i++){
+            if (arr[i] >= arr[k-1] && arr[i]>0){
             count++;
         }
     }
+
+
 
     cout << count;
 }
