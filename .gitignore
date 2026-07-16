@@ -1,0 +1,7 @@
+*.exe
+*.out
+*.o
+*.dSYM/
+a.out
+.vscode/
+158A_Next_Round
