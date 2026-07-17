@@ -5,31 +5,26 @@ using namespace std;
 
 int main(){
     short i,j {};
-    short arr[5][5];
-    short active_i, active_j {};
-    short min_i, min_j {};
+    short row, col, x {};
 
     for (i=0; i<5; i++)
     {
         for(j=0; j<5; j++)
         {
-            cin>> arr[i][j];
+            cin>> x;
 
-            if (arr[i][j] == 1)
+            if (x == 1)
             {
-                active_i = i;
-                active_j = j;
+                row = i;
+                col = j;
             }
         }
 
     }
 
-    min_i = abs(2-active_i) ;
-    min_j = abs(2-active_j);
+    cout << abs(2-row) + abs(2-col);
 
-    cout << min_i + min_j;
 
-    // cout<< arr[2][2];
 
 
 
